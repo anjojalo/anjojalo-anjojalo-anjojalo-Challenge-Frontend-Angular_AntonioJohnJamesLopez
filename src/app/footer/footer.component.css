@@ -1,0 +1,14 @@
+.bg-dark{
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+  color: white;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.container{
+    top: 2%;
+}

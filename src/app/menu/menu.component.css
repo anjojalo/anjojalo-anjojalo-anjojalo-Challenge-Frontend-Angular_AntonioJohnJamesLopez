@@ -1,0 +1,30 @@
+.tittle-menu{
+  text-align: center;
+}
+
+.tittle-card{
+  text-align: center;
+}
+
+.image-card{
+  width: 100%;
+}
+
+.col{
+  border-radius: 4px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-left: 10p;
+
+
+}
+
+.row{
+  padding-top: 10px;
+}
+
+
+

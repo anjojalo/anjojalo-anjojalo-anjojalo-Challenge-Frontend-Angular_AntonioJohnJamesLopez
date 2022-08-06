@@ -1,0 +1,41 @@
+
+  <div class="row justify-content-center">
+    <div class="row justify-content-center">
+      <h1 class="tittle-menu">Menu</h1>
+    <h3 class="tittle-menu">{{calcularEstadisticas()}} {{miMenu.length<=0?"":'Total: $ '+ acumuladoPrecio.toFixed(2)}}</h3>
+      <h3 class="tittle-menu"> {{miMenu.length<=0?"":'Average HealtCore: '+ acumuladoHealtCore.toFixed(2)}}</h3>
+      <h3 class="tittle-menu"> {{miMenu.length<=0?"":'Average Ready Minutes: '+ promedioPreparacion.toFixed(2)}}</h3>
+
+    </div>
+  </div>
+
+
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-md-4">
+    <div class="col" *ngFor="let arraymenu of miMenu; let i = index" >
+          <div>
+              <!--  -->
+              <div class="card card border-success mb-3" style="width: 18rem;">
+                  <img src="{{arraymenu.imagen}}" class="card-img-top" alt="...">
+
+                  <div class="card-body">
+                    <h5 class="card-title">Dish #: {{i+1}}</h5>
+                    
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Name: {{arraymenu.title}}</li>
+                    <li class="list-group-item">Ready InMinutes {{arraymenu.tiempoPreparacion}}</li>
+                    <li class="list-group-item">HealthScore: {{arraymenu.HealthScore}}</li>
+                    <li class="list-group-item">Price: {{arraymenu.price}}</li>
+                    <li class="list-group-item">Vegetarian: {{arraymenu.vegetariano==true?"Vegetarian":"No"}}</li>
+                  </ul>
+                  <div class="card-body">
+                    <button  id={{i}} type="button" class="btn btn-danger"  (click)="miId(i)">X Delete</button>
+                </div>
+            </div>
+
+  
+                   
+     
+  </div>
+

@@ -1,0 +1,24 @@
+<div class="container div-1">
+  <div class="row justify-content-sm-center">
+    <div class="col col-md-5">
+      <form  [formGroup]="formularioLogin" (ngSubmit)="loginPost(formularioLogin.value)">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+          <div>{{validacionEmail()}}</div>
+          <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+          <div>{{validacionPassword()}}</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="formularioLogin.invalid">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,23 @@
+
+.container-sm{
+  margin-top: 10px;
+}
+
+
+.col-lg-4{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container-buscar-receta{
+  border-radius: 10px;
+  background-color: aquamarine;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.footer-buscar-receta{
+  position:absolute;
+  bottom: 0;
+}
+
